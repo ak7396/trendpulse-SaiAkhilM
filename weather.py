@@ -22,4 +22,5 @@ elif response.status_code == 200:
 else:
     print("Error:", response.status_code)
 
-# Location data should not be logged because it is sensitive (GDPR - data minimization principle)
+# We should not print the city name because location is personal data.
+# As per privacy rules , we should avoid exposing user data unless necessary.
